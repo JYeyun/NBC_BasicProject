@@ -2,7 +2,6 @@ package com.example.kiosk
 
 fun main(){
     displayinfo() // 시작 메뉴 출력
-
 }
 
 fun displayinfo(){

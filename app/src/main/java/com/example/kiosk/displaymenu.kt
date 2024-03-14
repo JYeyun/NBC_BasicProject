@@ -14,7 +14,7 @@ fun displaymenu(a : Int){
         when(input){
             4 -> displayinfo()
             0 -> println()
-            else -> println("%s의 값은 %s입니다.".format(menu[input-1].name, menu[input-1].price))
+            else -> println("%s의 값은 %d원입니다.".format(menu[input-1].name, menu[input-1].price))
         }
     }catch (e:NumberFormatException){//입력된 값이 Int가 아니면 출력
         println("잘못된 값을 입력하셨습니다.")
