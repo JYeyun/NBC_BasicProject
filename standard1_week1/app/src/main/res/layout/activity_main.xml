@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.95"
+        app:layout_constraintHeight_percent="0.55"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background = "@drawable/radius_edge"
+        android:elevation="30dp"/>
+    <TextView
+        android:id="@+id/text_discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/image_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Discover Your\nOwn Dream House"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/text_lorem"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/toggle_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="55dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam maecenas mi non sed ut odio. Non, justo, sed facilisi et. Eget viverra urna, vestibulum egestas faucibus egestas. Sagittis nam velit volutpat eu nunc."
+        />
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="45dp"
+        >
+        <com.google.android.material.button.MaterialButton
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/btn_sign"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/mainpink"
+            app:strokeWidth="1dp"
+            app:cornerRadius="15dp"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            android:elevation="20dp"/>
+        <com.google.android.material.button.MaterialButton
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/btn_register"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:backgroundTint="@color/btn_back"
+            android:textColor="#545151"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            android:text="Register"
+            android:elevation="20dp"/>
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
