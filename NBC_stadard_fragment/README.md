@@ -17,4 +17,4 @@
 
 
 #### 블로그 링크
-<>
+< https://ginger-code.tistory.com/41 >
