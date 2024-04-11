@@ -1,0 +1,40 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <ImageView
+        android:id="@+id/detail_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/rose"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rose"
+        android:textSize="28sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/detail_img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/detail_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Rose"
+        android:textSize="22sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_name"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
