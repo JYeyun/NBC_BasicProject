@@ -1,11 +1,13 @@
-#Standard반 3주차 선택 과제
+# Standard반 3주차 선택 과제
 ---------------------------
 - fragment 간 데이터 전달(viewModel 사용)
 - RecyclerView 사용
 - data class 생성
 
 
-##기능 설명
+
+-----------------------------
+## 기능 설명
 > 앱을 실행하면 bottomnavigation이 연결된 main activity가 실행된다.
 > 홈 화면엔 recyclerview가 연결된 homefragment가 뜬다.
 > recyclerview 아이템을 클릭하면 dashboard 가 해당 아이템의 디테일 정보로 바뀐다.
