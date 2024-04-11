@@ -3,6 +3,7 @@
 - fragment 간 데이터 전달(viewModel 사용)
 - RecyclerView 사용
 - data class 생성
+- 소요시간 : 4h
 
 
 
